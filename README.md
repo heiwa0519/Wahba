@@ -1,5 +1,6 @@
 ## Implementations of the major developments in 3D-attitude determination of spacecraft.
 
+#### Original problem
 <br/>
 <p align="center">
   <img src="https://github.com/risherlock/Wahba/blob/master/docs/wahba_original_problem.PNG" width="800">

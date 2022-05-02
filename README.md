@@ -1,9 +1,31 @@
-<center>
-<h4>A Least Squares Estimate of Satellite Attitude</h4>
-Grace Wahba</br>
-1965</br>
-</center>
+## Implementations of the major developments in 3D-attitude determination of spacecraft.
 
-Given two sets of $n$ points $\{\vec{r}_{1}, \vec{r}_{2}, ..., \vec{r}_{n}\}$, and $\{\vec{y}_{l}, \vec{y}_{2}, ... , \vec{y}_{n}\}$, where $n \geq 2$, find the rotation matrix $\bm{Q}$ (i.e., the orthogonal matrix with determinant +1) which brings the first set into the best least squares coincidence with the second. That is, find $\bm{Q}$ which minimizes
+<br/>
+<p align="center">
+  <img src="https://github.com/risherlock/Wahba/blob/master/docs/wahba_original_problem.PNG" width="800">
+</p>
 
-$$\sum_{j=1}^{n} ||\vec{y}_{j} - \bm{Q} \vec{r}_{j}||^{2}.$$
+#### Implementations
+1. [TRIAD: A Passive System for Determining the Attitude of a Satellite (1964)][black1964]
+2. [Davenport's q method: A Vector Approach to the Algebra of Rotations with Applications (1968)][davenport1968]
+3. [SVD method: Attitude Determination using Vector Observations and Singular Value Decomposition (1968)][markley1968]
+4. [QUEST: Three-axis Attitude Determination from Vector Observations (1981)][shuster1981]
+5. [FOAM: Attitude Determination using Vector Observations, A Fast Optimal Matrix Algorithm (1993)][markley1993]
+6. [An Analytic Solution to Wahba's Problem (2013)][yang2013]
+7. [Attitude Determination using Newton's Method on Riemannian Manifold (2015)][yang2015]
+8. [FLAE: Fast Linear Quaternion Attitude Estimator Using Vector Observations (2017)][wu2017_newton] (Newton's method)
+9. [FLAE: Fast Linear Quaternion Attitude Estimator Using Vector Observations (2017)][wu2017_symbolic] (Symbolic method)
+
+#### Technical report
+My note [Mathematical introduction to attitude determination][mathemtical_wahba] documents the introduction to *attitude determination* (in constrast to the *attitude estimation* which utilizes estimation algoriths like Kalman Filter) of spacecraft and general approaches to the solution of Wahba's problem. It, however, does not contain the detail of any of above algorithms (because respective papers does this in more rigour then I could ever do). More emphasis is give on the analysis of the problem from the mathematical point of view.
+
+[black1964]: https://github.com/risherlock/Wahba/blob/master/matlab/algorithms/triad1964.m
+[davenport1968]: https://github.com/risherlock/Wahba/blob/master/matlab/algorithms/davenport1968.m
+[markley1968]: https://github.com/risherlock/Wahba/blob/master/matlab/algorithms/svd1968.m
+[shuster1981]: https://github.com/risherlock/Wahba/blob/master/matlab/algorithms/quest1981.m
+[markley1993]: https://github.com/risherlock/Wahba/blob/master/matlab/algorithms/foam1993.m
+[yang2013]: https://github.com/risherlock/Wahba/blob/master/matlab/algorithms/yang_analytical2013.m
+[yang2015]: https://github.com/risherlock/Wahba/blob/master/matlab/algorithms/yang_manifold2015.m
+[wu2017_newton]: https://github.com/risherlock/Wahba/blob/master/matlab/algorithms/flae_newton2017.m
+[wu2017_symbolic]: https://github.com/risherlock/Wahba/blob/master/matlab/algorithms/flae_symbolic2017.m
+[mathemtical_wahba]: https://github.com/risherlock/Wahba

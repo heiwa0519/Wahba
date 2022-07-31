@@ -18,7 +18,9 @@
 9. [FLAE: Fast Linear Quaternion Attitude Estimator Using Vector Observations (2017)][wu2017_symbolic] (Symbolic method)
 
 #### Technical report
-My note [*Mathematical Introduction to Attitude Determination*][mathemtical_wahba] documents the introduction to *attitude determination* (in constrast to the *attitude estimation* which utilizes estimation algoriths like Kalman Filter) of spacecraft and general approaches to the solution of Wahba's problem. It, however, does not contain the detail of any of above algorithms (because respective papers does this in more rigour then I could ever do). More emphasis is give on the analysis of the problem from the mathematical point of view.
+My note [*Mathematical Introduction to Attitude Determination*][mathemtical_wahba] documents the introduction to *attitude determination* (in constrast to the *attitude estimation* which utilizes estimation algoriths like Kalman Filter) of spacecraft and general approaches to the solution of Wahba's problem. It, however, does not contain the detail of any of above algorithms (because respective papers does this in more rigour then I could ever do). More emphasis is give on the analysis of the problem from the mathematical point of view. 
+
+If you are interested in Kalman filter based attitude estimation algorithms for spacecrafts, you might like [Attitude-Estimation](https://github.com/risherlock/Attitude-Estimation).
 
 [black1964]: https://github.com/risherlock/Wahba/blob/master/matlab/algorithms/triad1964.m
 [davenport1968]: https://github.com/risherlock/Wahba/blob/master/matlab/algorithms/davenport1968.m

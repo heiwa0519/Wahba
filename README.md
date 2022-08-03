@@ -11,7 +11,7 @@
 2. [Davenport's q method: A Vector Approach to the Algebra of Rotations with Applications (1968)][davenport1968]
 3. [SVD method: Attitude Determination using Vector Observations and Singular Value Decomposition (1968)][markley1968]
 4. [QUEST: Three-axis Attitude Determination from Vector Observations (1981)][shuster1981]
-5. [FOAM: Attitude Determination using Vector Observations, A Fast Optimal Matrix Algorithm (1993)][markley1993]
+5. [FOMA: Attitude Determination using Vector Observations, A Fast Optimal Matrix Algorithm (1993)][markley1993]
 6. [An Analytic Solution to Wahba's Problem (2013)][yang2013]
 7. [Attitude Determination using Newton's Method on Riemannian Manifold (2015)][yang2015]
 8. [FLAE: Fast Linear Quaternion Attitude Estimator Using Vector Observations (2017)][wu2017_newton] (Newton's method)
@@ -20,7 +20,10 @@
 #### Technical report
 My note [*Mathematical Introduction to Attitude Determination*][mathemtical_wahba] documents the introduction to *attitude determination* (in constrast to the *attitude estimation* which utilizes estimation algoriths like Kalman Filter) of spacecraft and general approaches to the solution of Wahba's problem. It, however, does not contain the detail of any of above algorithms (because respective papers does this in more rigour then I could ever do). More emphasis is give on the analysis of the problem from the mathematical point of view. 
 
-If you are interested in Kalman filter based attitude estimation algorithms for spacecrafts, you might like [Attitude-Estimation](https://github.com/risherlock/Attitude-Estimation).
+If you are interested in Kalman filter based attitude estimation algorithms for spacecrafts, please check [Attitude-Estimation](https://github.com/risherlock/Attitude-Estimation).
+
+#### TODOs
+1. ESOQ and ESOQ-2
 
 [black1964]: https://github.com/risherlock/Wahba/blob/master/matlab/algorithms/triad1964.m
 [davenport1968]: https://github.com/risherlock/Wahba/blob/master/matlab/algorithms/davenport1968.m
